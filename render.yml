@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cors-anywhere
+    env: node
+    buildCommand: ""
+    startCommand: node server.js
+    plan: free
+    envVars:
+      - key: CORSANYWHERE_ALLOWLIST
+        value: "*"
